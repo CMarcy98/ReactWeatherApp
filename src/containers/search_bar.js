@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchWeather } from "../actions";
-import API_K from '../../config';
-
-const API_KEY = API_K;
 
 class SearchBar extends Component {
 	constructor(props) {
@@ -28,7 +25,7 @@ class SearchBar extends Component {
 		this.setState({ term: '' });
 	}
 
-	
+
 	render() {
 		return(
 			<form onSubmit={this.onFormSubmit} className="input-group">
